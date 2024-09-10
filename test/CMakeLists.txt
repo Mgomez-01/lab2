@@ -20,7 +20,7 @@ target_compile_definitions(mytest
     PRIVATE PICO_EMULATE_DIVIDER=1
 )
 
-pico_enable_stdio_uart(mytest 1)
+pico_enable_stdio_uart(mytest 0)
 pico_set_binary_type(mytest no_flash)
 find_program(RENODE renode
 # This is extra stuff so it can find the mac installation paths.
